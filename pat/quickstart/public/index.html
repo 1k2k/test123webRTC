@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Twilio Video - Video Quickstart</title>
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="lib/bootstrap.min.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+          <div class="container-fluid">
+            <div class="row" style="height: 100vh;">
+              <div class="col-12 mx-auto px-0">
+                <div id="remote-media" class="fullscreen-bg"></div>
+                <div id="controls" class="py-4">
+                    <div id="preview">
+                        <div id="local-media" class="embed-responsive embed-responsive-16by9"></div>
+                        <!-- <button id="button-preview">Preview My Camera</button> -->
+                    </div>
+                    <!-- <div id="room-controls">
+                        <p class="instructions">Room Name:</p>
+                        <input id="room-name" type="text" placeholder="Enter a room name" />
+                        <button id="button-join">Join Room</button>
+                        <button id="button-leave">Leave Room</button>
+                    </div> -->
+                    
+                </div>
+                <div id="log" class="d-none"></div>
+              </div>
+            </div>
+            <!-- <div class="row">
+              <div class="col-10 col-lg-12 mx-auto">
+                
+              </div>
+            </div> -->
+          </div>
+        
+        <!-- <div id="controls">
+            <div id="preview">
+                <div id="local-media"></div>
+                <button id="button-preview">Preview My Camera</button>
+            </div>
+            <div id="room-controls">
+                <p class="instructions">Room Name:</p>
+                <input id="room-name" type="text" placeholder="Enter a room name" />
+                <button id="button-join">Join Room</button>
+                <button id="button-leave">Leave Room</button>
+            </div>
+            <div id="log" style="display: none;"></div>
+        </div> -->
+        <div id="loading">
+            <div id="loading-center">
+                <div id="loading-center-absolute">
+                    <div class="object" id="object_one"></div>
+                    <div class="object" id="object_two"></div>
+                    <div class="object" id="object_three"></div>
+                </div>
+                <div class="loading-text">Waiting for users to join</div>
+            </div>
+        </div>
+        
+        <div class="control-icons" id="control-icons">
+            <div id="mircophone-on" class="mb-3 microphone-control active hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a">
+                    <span class="hi-icon hi-icon-microphone"><i class="fas fa-microphone"></i></span>
+                </div>
+                <div id="video-on" class="mb-2 video-control active hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a">
+                    <span class="hi-icon hi-icon-video"><i class="fas fa-video"></i></span>
+                </div>
+          <!-- <div id="mircophone-on" class="mb-2 microphone-control active"><i class="fas fa-microphone"></i></div> -->
+          <!-- <div id="mircophone-off" class="microphone-control"><i class="fas fa-microphone-slash"></i></div> -->
+          <!-- <div id="video-on" class="video-control active"><i class="fas fa-video"></i></div> -->
+          <!-- <div id="video-off" class="video-control"><i class="fas fa-video-slash"></i></div> -->
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js" integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9" crossorigin="anonymous"></script>
+        <script src="lib/bootstrap.bundle.min.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
